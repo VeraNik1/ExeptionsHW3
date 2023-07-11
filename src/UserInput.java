@@ -64,7 +64,7 @@ public class UserInput {
     }
     /** проверка формата для телефона*/
     public static boolean isNotValidPhone(String phoneNumber) {
-        Pattern phonePattern = Pattern.compile("^\\d{10}$");
+        Pattern phonePattern = Pattern.compile("^\\d{7}$");
         return !phonePattern.matcher(phoneNumber).matches();
     }
     /** проверка корректности ФИО*/
